@@ -1,0 +1,23 @@
+{
+  "name": "imperial-geass-noir",
+  "displayName": "Imperial Geass Noir",
+  "description": "Dark imperial VS Code theme with noir purple surfaces, antique gold accents, and restrained crimson diagnostics.",
+  "version": "1.0.0",
+  "publisher": "imperialgeassnoir",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Imperial Geass Noir",
+        "uiTheme": "vs-dark",
+        "path": "./themes/imperial-geass-noir-color-theme.json"
+      }
+    ]
+  }
+}

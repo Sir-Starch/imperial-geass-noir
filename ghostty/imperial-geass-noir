@@ -1,0 +1,24 @@
+background = 07070B
+foreground = E8E1D2
+cursor-color = C4A45A
+selection-background = 3A1425
+selection-foreground = E8E1D2
+palette = 0=#0D0B12
+palette = 1=#9E102B
+palette = 2=#6E8B6F
+palette = 3=#C4A45A
+palette = 4=#6046A6
+palette = 5=#8D4FB3
+palette = 6=#6F9FA8
+palette = 7=#D8D0C0
+palette = 8=#2B2238
+palette = 9=#D33A52
+palette = 10=#8BA68A
+palette = 11=#E0C27A
+palette = 12=#7D63C4
+palette = 13=#AE70CD
+palette = 14=#8CBCC4
+palette = 15=#FFF6E5
+font-family = IBM Plex Mono
+font-size = 11.5
+background-opacity = 0.92

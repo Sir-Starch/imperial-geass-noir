@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3840" height="2160" viewBox="0 0 3840 2160">
+  <metadata>
+    Imperial Geass Noir wallpaper. Central sigil path derived from Wikimedia
+    Commons File:Geass.svg by Koveras at English Wikipedia, selected license
+    CC BY-SA 3.0. Source: https://commons.wikimedia.org/wiki/File:Geass.svg
+  </metadata>
+  <defs>
+    <!-- Deep Space/Indigo Background -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="75%">
+      <stop offset="0" stop-color="#1A0D36"/>
+      <stop offset="0.3" stop-color="#0E051C"/>
+      <stop offset="0.6" stop-color="#05010A"/>
+      <stop offset="1" stop-color="#000000"/>
+    </radialGradient>
+    
+    <!-- Suppressed purple sigil aura -->
+    <radialGradient id="geassGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#6046A6" stop-opacity="0.14"/>
+      <stop offset="0.25" stop-color="#2B2238" stop-opacity="0.07"/>
+      <stop offset="0.6" stop-color="#111018" stop-opacity="0.025"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Floor fade to blend chessboard -->
+    <linearGradient id="floorFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05010A" stop-opacity="1"/>
+      <stop offset="0.2" stop-color="#05010A" stop-opacity="0.09"/>
+      <stop offset="0.8" stop-color="#05010A" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- Imperial Gold Gradient -->
+    <linearGradient id="goldGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B8860B"/>
+      <stop offset="0.5" stop-color="#FFF2CD"/>
+      <stop offset="1" stop-color="#C4A45A"/>
+    </linearGradient>
+    
+    <!-- Dark Imperial Purple Gradient -->
+    <linearGradient id="purpleGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4B0082"/>
+      <stop offset="1" stop-color="#1A0B2E"/>
+    </linearGradient>
+
+    <!-- HUD Glow Filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="heavyGlow">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+      <radialGradient id="coreMute" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#07070B" stop-opacity="0.86"/>
+      <stop offset="0.45" stop-color="#0D0B12" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#0D0B12" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="coreDiffuse" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="3840" height="2160" fill="url(#bgGlow)"/>
+
+  <!-- 2. Zero's Cape / Abstract Wings (Background angular shapes) -->
+  <path d="M 1920 200 L 3200 1200 L 3840 700 L 3840 2160 L 0 2160 L 0 700 L 640 1200 Z" fill="url(#purpleGradient)" opacity="0.12"/>
+  <path d="M 1920 100 L 3400 1300 L 3840 900 L 3840 2160 L 0 2160 L 0 900 L 440 1300 Z" fill="none" stroke="url(#goldGradient)" stroke-width="3" opacity="0.15"/>
+
+  <!-- 3. Perspective Chessboard (Lelouch's Motif) -->
+  <!-- Vanishing point is at 1920, 900 -->
+  <g opacity="0.09" stroke="#C4A45A" stroke-width="1.5">
+    <!-- Converging Perspective Lines -->
+    <path d="M 1920 900 L -2000 2160" />
+    <path d="M 1920 900 L -1000 2160" />
+    <path d="M 1920 900 L -200 2160" />
+    <path d="M 1920 900 L 500 2160" />
+    <path d="M 1920 900 L 1210 2160" />
+    <path d="M 1920 900 L 1920 2160" />
+    <path d="M 1920 900 L 2630 2160" />
+    <path d="M 1920 900 L 3340 2160" />
+    <path d="M 1920 900 L 4040 2160" />
+    <path d="M 1920 900 L 4840 2160" />
+    <path d="M 1920 900 L 5840 2160" />
+
+    <!-- Exponential Horizontal Lines for Depth -->
+    <line x1="0" y1="919" x2="3840" y2="919" stroke-width="0.3"/>
+    <line x1="0" y1="978" x2="3840" y2="978" stroke-width="0.5"/>
+    <line x1="0" y1="1077" x2="3840" y2="1077" stroke-width="0.8"/>
+    <line x1="0" y1="1215" x2="3840" y2="1215" stroke-width="1.2"/>
+    <line x1="0" y1="1392" x2="3840" y2="1392" stroke-width="1.8"/>
+    <line x1="0" y1="1608" x2="3840" y2="1608" stroke-width="2.5"/>
+    <line x1="0" y1="1864" x2="3840" y2="1864" stroke-width="3.5"/>
+    <line x1="0" y1="2160" x2="3840" y2="2160" stroke-width="5"/>
+  </g>
+
+  <!-- Blend the chessboard into the darkness -->
+  <rect x="0" y="800" width="3840" height="1360" fill="url(#floorFade)"/>
+
+  <!-- 4. Knightmare Frame HUD / Absolute Defense Rings (Shinkiro/Lancelot vibes) -->
+  <g transform="translate(1920, 1080)">
+    <!-- Outer Data Ring -->
+    <circle cx="0" cy="0" r="750" fill="none" stroke="url(#goldGradient)" stroke-width="2" opacity="0.15"/>
+    <circle cx="0" cy="0" r="730" fill="none" stroke="#C4A45A" stroke-width="6" stroke-dasharray="4 24" opacity="0.13"/>
+    
+    <!-- Medium Complex Rings -->
+    <circle cx="0" cy="0" r="500" fill="none" stroke="#6046A6" stroke-width="1" opacity="0.10"/>
+    <circle cx="0" cy="0" r="480" fill="none" stroke="url(#goldGradient)" stroke-width="3" stroke-dasharray="100 20" opacity="0.18"/>
+    <circle cx="0" cy="0" r="460" fill="none" stroke="#C4A45A" stroke-width="12" stroke-dasharray="3 15" opacity="0.16"/>
+    
+    <!-- Inner High-Tech Targeting Ring -->
+    <circle cx="0" cy="0" r="320" fill="none" stroke="#6046A6" stroke-width="2" stroke-dasharray="250 80" opacity="0.22"/>
+    
+    <!-- Axis Crosshairs -->
+    <line x1="-850" y1="0" x2="-550" y2="0" stroke="url(#goldGradient)" stroke-width="2" opacity="0.20"/>
+    <line x1="550" y1="0" x2="850" y2="0" stroke="url(#goldGradient)" stroke-width="2" opacity="0.20"/>
+    <line x1="0" y1="-850" x2="0" y2="-550" stroke="url(#goldGradient)" stroke-width="2" opacity="0.20"/>
+    <line x1="0" y1="550" x2="0" y2="850" stroke="url(#goldGradient)" stroke-width="2" opacity="0.20"/>
+    
+    <!-- Targeting Brackets (Four Corners) -->
+    <path d="M -220 -220 L -280 -220 L -280 -160" fill="none" stroke="#6046A6" stroke-width="4" opacity="0.14"/>
+    <path d="M 220 -220 L 280 -220 L 280 -160" fill="none" stroke="#6046A6" stroke-width="4" opacity="0.14"/>
+    <path d="M -220 220 L -280 220 L -280 160" fill="none" stroke="#6046A6" stroke-width="4" opacity="0.14"/>
+    <path d="M 220 220 L 280 220 L 280 160" fill="none" stroke="#6046A6" stroke-width="4" opacity="0.14"/>
+
+    <!-- Orbital Arcs -->
+    <path d="M -380 0 A 380 380 0 0 1 -268 -268" fill="none" stroke="url(#goldGradient)" stroke-width="4" opacity="0.22"/>
+    <path d="M 380 0 A 380 380 0 0 1 268 268" fill="none" stroke="url(#goldGradient)" stroke-width="4" opacity="0.22"/>
+    <path d="M -600 0 A 600 600 0 0 0 -424 424" fill="none" stroke="#6046A6" stroke-width="2" opacity="0.18"/>
+    <path d="M 600 0 A 600 600 0 0 0 424 -424" fill="none" stroke="#6046A6" stroke-width="2" opacity="0.18"/>
+  </g>
+
+  <!-- 5. Central sigil aura / Power Glow -->
+  <circle cx="1920" cy="1080" r="550" fill="url(#geassGlow)" filter="url(#heavyGlow)"/>
+
+  <!-- 6. Recolored central sigil motif derived from Wikimedia Commons File:Geass.svg -->
+  <g transform="translate(1920, 1080) scale(4.2) translate(-111, -75)" filter="url(#glow)">
+    <path
+       d="M 111,147 C 122,124 131,124 139,120 C 164,110 165,93 161,73 C 158,47 197,25 218,1 L 143,36 C 129,44 132,50 134,60 C 140,79 136,87 129,94 C 123,98 110,107 92,94 C 86,88 83,76 87,60 C 89,49 92,43 79,36 L 4,1 C 28,25 64,50 60,73 C 60,93 53,105 82,120 C 92,125 100,123 110,147 z"
+       fill="#6046A6" fill-opacity="0.38" stroke="#A49AAD" stroke-width="1.5" stroke-opacity="0.18"/>
+  </g>
+  <!-- Inner shadow/core of the Geass -->
+  <g transform="translate(1920, 1080) scale(4.2) translate(-111, -75)">
+    <path
+       d="M 111,147 C 122,124 131,124 139,120 C 164,110 165,93 161,73 C 158,47 197,25 218,1 L 143,36 C 129,44 132,50 134,60 C 140,79 136,87 129,94 C 123,98 110,107 92,94 C 86,88 83,76 87,60 C 89,49 92,43 79,36 L 4,1 C 28,25 64,50 60,73 C 60,93 53,105 82,120 C 92,125 100,123 110,147 z"
+       fill="none" stroke="#7B63C4" stroke-width="0.5" opacity="0.14"/>
+  </g>
+
+  <!-- Soft core veil: diffuses the bright central Geass gap so it reads as atmosphere, not a hard glowing dot. -->
+  <circle cx="1920" cy="1080" r="135" fill="url(#coreMute)" filter="url(#coreDiffuse)" opacity="0.92"/>
+
+  <!-- 7. Geometric Shards (Miracles/Shattered World Motif) -->
+  <g opacity="0.18" fill="none" stroke="url(#goldGradient)" stroke-width="1.5">
+    <polygon points="1100,500 1250,450 1300,600" fill="#2D1B4E" fill-opacity="0.18"/>
+    <polygon points="2700,550 2600,400 2850,350" fill="#2D1B4E" fill-opacity="0.18"/>
+    <polygon points="1200,1700 1000,1600 1300,1550" fill="#2D1B4E" fill-opacity="0.09"/>
+    <polygon points="2600,1650 2800,1750 2900,1500" fill="#2D1B4E" fill-opacity="0.09"/>
+    
+    <polygon points="700,800 850,750 750,1000" fill="#C4A45A" fill-opacity="0.1" filter="url(#blur)"/>
+    <polygon points="3100,1300 3200,1000 3050,1100" fill="#C4A45A" fill-opacity="0.1" filter="url(#blur)"/>
+  </g>
+
+  <!-- 8. Imperial Borders & Edge Tech Details -->
+  <!-- Left Border -->
+  <path d="M 120 0 L 120 2160" stroke="url(#goldGradient)" stroke-width="2" opacity="0.18"/>
+  <path d="M 140 0 L 140 2160" stroke="url(#goldGradient)" stroke-width="1" opacity="0.15"/>
+  <g fill="url(#goldGradient)" opacity="0.18">
+    <rect x="100" y="300" width="10" height="70"/>
+    <rect x="100" y="380" width="10" height="20"/>
+    <rect x="100" y="410" width="10" height="120"/>
+    <rect x="100" y="540" width="10" height="15"/>
+    <polygon points="120,600 150,630 120,660" opacity="0.22"/>
+  </g>
+
+  <!-- Right Border -->
+  <path d="M 3720 0 L 3720 2160" stroke="url(#goldGradient)" stroke-width="2" opacity="0.18"/>
+  <path d="M 3700 0 L 3700 2160" stroke="url(#goldGradient)" stroke-width="1" opacity="0.15"/>
+  <g fill="url(#goldGradient)" opacity="0.18">
+    <rect x="3730" y="1600" width="10" height="80"/>
+    <rect x="3730" y="1690" width="10" height="25"/>
+    <rect x="3730" y="1725" width="10" height="150"/>
+    <rect x="3730" y="1885" width="10" height="20"/>
+    <polygon points="3720,1500 3690,1470 3720,1440" opacity="0.22"/>
+  </g>
+
+  <!-- 9. Vignette (Focus attention on center) -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+    <stop offset="0.65" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.85"/>
+  </radialGradient>
+  <rect width="3840" height="2160" fill="url(#vignette)"/>
+
+</svg>

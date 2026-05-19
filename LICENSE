@@ -1,0 +1,49 @@
+Imperial Geass Noir licensing
+
+The Imperial Geass Noir project is licensed under the GNU General Public
+License, version 3 or later, unless a more specific license is listed below.
+
+SPDX-License-Identifier: GPL-3.0-or-later
+
+Copyright (C) 2026 Imperial Geass Noir contributors
+
+This package includes shell scripts, KDE Plasma theme metadata, KDE color
+scheme files, Plasma SVG assets, terminal profiles, shell prompt profiles,
+documentation, and packaging glue. Those original Imperial Geass Noir files are
+licensed as GPL-3.0-or-later.
+
+Third-party and derived assets:
+
+- `kde/icons/ImperialGeassNoir/` is a full recolored derivative of the
+  user-provided Papirus Vectorel/Papirus-Adapta-Nokto icon theme. The source
+  archive includes LGPL-3.0 license text and contributor attributions. This
+  derived icon directory remains under LGPL-3.0-or-later compatible terms as
+  documented in that directory.
+- `kde/aurorae/themes/ImperialGeassNoir/` is a recolored and modified
+  derivative of the Daemon-2.0 Aurorae window decoration by Mathis Paquet. The
+  original metadata lists `GPL_V3`; this derivative is distributed under the
+  project GPL-3.0-or-later terms.
+- `assets/holy-britannian-crest.svg` is the crest group extracted unchanged
+  from Wikimedia Commons `File:Holy Britannian Empire.svg` by Jud nereide,
+  licensed as CC BY 4.0. The generated application launcher icon files include
+  that same crest asset and should be treated as CC BY 4.0, not GPL.
+- The central Geass-like wallpaper symbol is derived from Wikimedia Commons
+  `File:Geass.svg` by Koveras at English Wikipedia. Wikimedia Commons lists
+  that file under GFDL-1.2-or-later and CC BY-SA 1.0/2.0/2.5/3.0, with a choice
+  of license. For this package, treat the derived wallpaper symbol and wallpaper
+  files containing it as CC BY-SA 3.0, not GPL. Attribution and source details
+  are in `NOTICE.md` and `assets/README.md`.
+
+GNU General Public License notice:
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <https://www.gnu.org/licenses/>.

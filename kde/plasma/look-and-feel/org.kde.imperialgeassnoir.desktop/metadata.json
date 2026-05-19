@@ -1,0 +1,21 @@
+{
+  "KPackageStructure": "Plasma/LookAndFeel",
+  "KPlugin": {
+    "Authors": [
+      {
+        "Email": "",
+        "Name": "Imperial Geass Noir contributors"
+      }
+    ],
+    "Category": "Look and Feel",
+    "Description": "Imperial Geass Noir Plasma 6 look and feel package",
+    "Id": "org.kde.imperialgeassnoir.desktop",
+    "License": "GPL-3.0-or-later",
+    "Name": "Imperial Geass Noir",
+    "ServiceTypes": [
+      "Plasma/LookAndFeel"
+    ],
+    "Version": "1.0.0"
+  },
+  "X-Plasma-API": "6.0"
+}

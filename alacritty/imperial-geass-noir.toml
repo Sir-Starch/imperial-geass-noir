@@ -1,0 +1,42 @@
+[colors.primary]
+background = "#07070B"
+foreground = "#E8E1D2"
+
+[colors.cursor]
+text = "#07070B"
+cursor = "#C4A45A"
+
+[colors.selection]
+text = "#E8E1D2"
+background = "#3A1425"
+
+[colors.normal]
+black = "#0D0B12"
+red = "#9E102B"
+green = "#6E8B6F"
+yellow = "#C4A45A"
+blue = "#6046A6"
+magenta = "#8D4FB3"
+cyan = "#6F9FA8"
+white = "#D8D0C0"
+
+[colors.bright]
+black = "#2B2238"
+red = "#D33A52"
+green = "#8BA68A"
+yellow = "#E0C27A"
+blue = "#7D63C4"
+magenta = "#AE70CD"
+cyan = "#8CBCC4"
+white = "#FFF6E5"
+
+[font]
+size = 11.5
+
+[font.normal]
+family = "IBM Plex Mono"
+style = "Regular"
+
+[window]
+opacity = 0.92
+padding = { x = 10, y = 10 }

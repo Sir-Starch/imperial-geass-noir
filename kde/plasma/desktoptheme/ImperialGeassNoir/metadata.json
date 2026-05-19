@@ -1,0 +1,20 @@
+{
+  "KPlugin": {
+    "Authors": [
+      {
+        "Email": "",
+        "Name": "Imperial Geass Noir contributors"
+      }
+    ],
+    "Category": "Plasma Theme",
+    "Description": "Dark imperial Plasma theme with crimson, purple, and antique gold accents",
+    "Id": "ImperialGeassNoir",
+    "License": "GPL-3.0-or-later",
+    "Name": "Imperial Geass Noir",
+    "ServiceTypes": [
+      "Plasma/Theme"
+    ],
+    "Version": "1.0.0"
+  },
+  "X-Plasma-API": "6.0"
+}

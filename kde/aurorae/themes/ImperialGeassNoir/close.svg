@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="active-center">
+    <rect x="0" y="0" width="16" height="16" fill="#000000" opacity="0.01"/>
+    <path d="m4.5 4.5 7 7M11.5 4.5l-7 7" stroke="#8A1028" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <g id="hover-center">
+    <path d="M8 2.5 13.5 8 8 13.5 2.5 8Z" fill="#241D36" fill-opacity="0.96"/>
+    <path d="m5 5 6 6M11 5l-6 6" stroke="#9E102B" stroke-width="1.45" stroke-linecap="square"/>
+  </g>
+  <g id="pressed-center">
+    <path d="M8 2.5 13.5 8 8 13.5 2.5 8Z" fill="#7A0D22" fill-opacity="0.74"/>
+    <path d="m5 5 6 6M11 5l-6 6" stroke="#9E102B" stroke-width="1.45" stroke-linecap="square"/>
+  </g>
+  <g id="inactive-center">
+    <rect x="0" y="0" width="16" height="16" fill="#000000" opacity="0.01"/>
+    <path d="m4.5 4.5 7 7M11.5 4.5l-7 7" stroke="#7A0D22" stroke-opacity="0.68" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+  <g id="deactivated-center">
+    <rect x="0" y="0" width="16" height="16" fill="#000000" opacity="0.01"/>
+    <path d="m4.5 4.5 7 7M11.5 4.5l-7 7" stroke="#7A0D22" stroke-opacity="0.42" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+</svg>

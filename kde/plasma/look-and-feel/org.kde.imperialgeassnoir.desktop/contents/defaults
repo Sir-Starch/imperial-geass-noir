@@ -1,0 +1,31 @@
+[kdeglobals][General]
+ColorScheme=ImperialGeassNoir
+AccentColor=96,70,166
+font=IBM Plex Sans,10,-1,5,50,0,0,0,0,0
+menuFont=IBM Plex Sans,10,-1,5,50,0,0,0,0,0
+smallestReadableFont=IBM Plex Sans,8,-1,5,50,0,0,0,0,0
+toolBarFont=IBM Plex Sans,10,-1,5,50,0,0,0,0,0
+fixed=IBM Plex Mono,10,-1,5,50,0,0,0,0,0
+
+[kdeglobals][KDE]
+widgetStyle=Breeze
+
+[kdeglobals][Icons]
+Theme=ImperialGeassNoir
+
+[plasmarc][Theme]
+name=ImperialGeassNoir
+
+[kcminputrc][Mouse]
+cursorTheme=breeze_cursors
+
+[kwinrc][org.kde.kdecoration2]
+library=org.kde.kwin.aurorae.v2
+theme=__aurorae__svg__ImperialGeassNoir
+
+[kdeglobals][WM]
+activeFont=IBM Plex Sans,11,-1,5,57,0,0,0,0,0
+inactiveFont=IBM Plex Sans,11,-1,5,57,0,0,0,0,0
+
+[KSplash]
+Theme=None

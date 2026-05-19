@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="72" viewBox="0 0 96 72">
+  <g id="vi-normal">
+    <rect id="normal-center" x="14" y="12" width="24" height="20" fill="#111018" fill-opacity="0.04"/>
+    <rect id="normal-top" x="14" y="8" width="24" height="4" fill="#111018" fill-opacity="0.04"/>
+    <rect id="normal-bottom" x="14" y="32" width="24" height="4" fill="#111018" fill-opacity="0.04"/>
+    <rect id="normal-left" x="10" y="12" width="4" height="20" fill="#111018" fill-opacity="0.04"/>
+    <rect id="normal-right" x="38" y="12" width="4" height="20" fill="#111018" fill-opacity="0.04"/>
+    <path id="normal-topleft" d="M14 8h-1a3 3 0 0 0-3 3v1h4z" fill="#111018" fill-opacity="0.04"/>
+    <path id="normal-topright" d="M38 8h1a3 3 0 0 1 3 3v1h-4z" fill="#111018" fill-opacity="0.04"/>
+    <path id="normal-bottomleft" d="M10 32v1a3 3 0 0 0 3 3h1v-4z" fill="#111018" fill-opacity="0.04"/>
+    <path id="normal-bottomright" d="M38 32v4h1a3 3 0 0 0 3-3v-1z" fill="#111018" fill-opacity="0.04"/>
+  </g>
+  <g id="vi-hover">
+    <rect id="hover-center" x="58" y="12" width="24" height="20" fill="#21172E" fill-opacity="0.46"/>
+    <rect id="hover-top" x="58" y="8" width="24" height="4" fill="#21172E" fill-opacity="0.46"/>
+    <rect id="hover-bottom" x="58" y="32" width="24" height="4" fill="#21172E" fill-opacity="0.46"/>
+    <rect id="hover-left" x="54" y="12" width="4" height="20" fill="#21172E" fill-opacity="0.46"/>
+    <rect id="hover-right" x="82" y="12" width="4" height="20" fill="#21172E" fill-opacity="0.46"/>
+    <path id="hover-topleft" d="M58 8h-1a3 3 0 0 0-3 3v1h4z" fill="#21172E" fill-opacity="0.46"/>
+    <path id="hover-topright" d="M82 8h1a3 3 0 0 1 3 3v1h-4z" fill="#21172E" fill-opacity="0.46"/>
+    <path id="hover-bottomleft" d="M54 32v1a3 3 0 0 0 3 3h1v-4z" fill="#21172E" fill-opacity="0.46"/>
+    <path id="hover-bottomright" d="M82 32v4h1a3 3 0 0 0 3-3v-1z" fill="#21172E" fill-opacity="0.46"/>
+  </g>
+  <g id="vi-selected">
+    <rect id="selected-center" x="14" y="48" width="24" height="16" fill="#6046A6" fill-opacity="0.24"/>
+    <rect id="selected-top" x="14" y="44" width="24" height="4" fill="#6046A6" fill-opacity="0.24"/>
+    <rect id="selected-bottom" x="14" y="64" width="24" height="4" fill="#6046A6" fill-opacity="0.24"/>
+    <rect id="selected-left" x="10" y="48" width="4" height="16" fill="#6046A6" fill-opacity="0.24"/>
+    <rect id="selected-right" x="38" y="48" width="4" height="16" fill="#6046A6" fill-opacity="0.24"/>
+    <path id="selected-topleft" d="M14 44h-1a3 3 0 0 0-3 3v1h4z" fill="#6046A6" fill-opacity="0.24"/>
+    <path id="selected-topright" d="M38 44h1a3 3 0 0 1 3 3v1h-4z" fill="#6046A6" fill-opacity="0.24"/>
+    <path id="selected-bottomleft" d="M10 64v1a3 3 0 0 0 3 3h1v-4z" fill="#6046A6" fill-opacity="0.24"/>
+    <path id="selected-bottomright" d="M38 64v4h1a3 3 0 0 0 3-3v-1z" fill="#6046A6" fill-opacity="0.24"/>
+  </g>
+  <rect id="hint-tile-center" x="-8" y="-8" width="4" height="4" opacity="0.01"/>
+  <use id="selected+hover-center" href="#selected-center"/><use id="selected+hover-top" href="#selected-top"/><use id="selected+hover-bottom" href="#selected-bottom"/><use id="selected+hover-left" href="#selected-left"/><use id="selected+hover-right" href="#selected-right"/><use id="selected+hover-topleft" href="#selected-topleft"/><use id="selected+hover-topright" href="#selected-topright"/><use id="selected+hover-bottomleft" href="#selected-bottomleft"/><use id="selected+hover-bottomright" href="#selected-bottomright"/>
+</svg>

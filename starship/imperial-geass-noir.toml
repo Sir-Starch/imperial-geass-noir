@@ -1,0 +1,48 @@
+# Imperial Geass Noir starship profile.
+
+format = """
+[♔](fg:#C4A45A) $username$hostname $directory$git_branch$git_status
+[❯](fg:#C4A45A) """
+
+right_format = "[$time](fg:#A49AAD)"
+add_newline = false
+palette = "imperial_geass_noir"
+
+[palettes.imperial_geass_noir]
+background = "#07070B"
+surface = "#111018"
+purple = "#6046A6"
+crimson = "#9E102B"
+gold = "#C4A45A"
+text = "#E8E1D2"
+muted = "#A49AAD"
+
+[username]
+show_always = true
+style_user = "fg:text"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+style = "fg:muted"
+format = "[@$hostname]($style)"
+
+[directory]
+style = "fg:purple"
+truncation_length = 4
+truncate_to_repo = false
+format = " [$path]($style)"
+
+[git_branch]
+style = "fg:crimson"
+format = " [$symbol$branch]($style)"
+symbol = ""
+
+[git_status]
+style = "fg:gold"
+format = " [$all_status$ahead_behind]($style)"
+
+[time]
+disabled = false
+format = "$time"
+time_format = "%H:%M"

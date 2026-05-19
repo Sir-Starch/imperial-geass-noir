@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="160" viewBox="0 0 192 160">
+  <g id="task-normal">
+    <rect id="normal-hint-top-margin" x="27" y="0" width="10" height="10" opacity="0.01"/>
+    <rect id="normal-hint-bottom-margin" x="27" y="54" width="10" height="10" opacity="0.01"/>
+    <rect id="normal-hint-left-margin" x="0" y="27" width="12" height="10" opacity="0.01"/>
+    <rect id="normal-hint-right-margin" x="52" y="27" width="12" height="10" opacity="0.01"/>
+    <rect id="normal-center" x="18" y="18" width="28" height="28" fill="#21172E" fill-opacity="0.34"/>
+    <rect id="normal-top" x="18" y="12" width="28" height="6" fill="#21172E" fill-opacity="0.34"/>
+    <rect id="normal-bottom" x="18" y="46" width="28" height="6" fill="#C4A45A" fill-opacity="0.48"/>
+    <rect id="normal-left" x="12" y="18" width="6" height="28" fill="#21172E" fill-opacity="0.34"/>
+    <rect id="normal-right" x="46" y="18" width="6" height="28" fill="#21172E" fill-opacity="0.34"/>
+    <path id="normal-topleft" d="M18 12h-1a5 5 0 0 0-5 5v1h6z" fill="#21172E" fill-opacity="0.34"/>
+    <path id="normal-topright" d="M46 12h1a5 5 0 0 1 5 5v1h-6z" fill="#21172E" fill-opacity="0.34"/>
+    <path id="normal-bottomleft" d="M12 46v1a5 5 0 0 0 5 5h1v-6z" fill="#C4A45A" fill-opacity="0.48"/>
+    <path id="normal-bottomright" d="M46 46v6h1a5 5 0 0 0 5-5v-1z" fill="#C4A45A" fill-opacity="0.48"/>
+  </g>
+  <g id="task-hover">
+    <rect id="hover-center" x="82" y="18" width="28" height="28" fill="#241832" fill-opacity="0.56"/>
+    <rect id="hover-top" x="82" y="12" width="28" height="6" fill="#241832" fill-opacity="0.56"/>
+    <rect id="hover-bottom" x="82" y="46" width="28" height="6" fill="#C4A45A" fill-opacity="0.50"/>
+    <rect id="hover-left" x="76" y="18" width="6" height="28" fill="#241832" fill-opacity="0.56"/>
+    <rect id="hover-right" x="110" y="18" width="6" height="28" fill="#241832" fill-opacity="0.56"/>
+    <path id="hover-topleft" d="M82 12h-1a5 5 0 0 0-5 5v1h6z" fill="#241832" fill-opacity="0.56"/>
+    <path id="hover-topright" d="M110 12h1a5 5 0 0 1 5 5v1h-6z" fill="#241832" fill-opacity="0.56"/>
+    <path id="hover-bottomleft" d="M76 46v1a5 5 0 0 0 5 5h1v-6z" fill="#C4A45A" fill-opacity="0.50"/>
+    <path id="hover-bottomright" d="M110 46v6h1a5 5 0 0 0 5-5v-1z" fill="#C4A45A" fill-opacity="0.50"/>
+  </g>
+  <g id="task-focus">
+    <rect id="focus-center" x="146" y="18" width="28" height="28" fill="#2A1C3C" fill-opacity="0.62"/>
+    <rect id="focus-top" x="146" y="12" width="28" height="6" fill="#2A1C3C" fill-opacity="0.62"/>
+    <rect id="focus-bottom" x="146" y="46" width="28" height="6" fill="#C4A45A" fill-opacity="0.56"/>
+    <rect id="focus-left" x="140" y="18" width="6" height="28" fill="#2A1C3C" fill-opacity="0.62"/>
+    <rect id="focus-right" x="174" y="18" width="6" height="28" fill="#2A1C3C" fill-opacity="0.62"/>
+    <path id="focus-topleft" d="M146 12h-1a5 5 0 0 0-5 5v1h6z" fill="#2A1C3C" fill-opacity="0.62"/>
+    <path id="focus-topright" d="M174 12h1a5 5 0 0 1 5 5v1h-6z" fill="#2A1C3C" fill-opacity="0.62"/>
+    <path id="focus-bottomleft" d="M140 46v1a5 5 0 0 0 5 5h1v-6z" fill="#C4A45A" fill-opacity="0.56"/>
+    <path id="focus-bottomright" d="M174 46v6h1a5 5 0 0 0 5-5v-1z" fill="#C4A45A" fill-opacity="0.56"/>
+  </g>
+  <g id="task-attention">
+    <rect id="attention-center" x="18" y="98" width="28" height="28" fill="#2A1727" fill-opacity="0.62"/>
+    <rect id="attention-top" x="18" y="92" width="28" height="6" fill="#2A1727" fill-opacity="0.62"/>
+    <rect id="attention-bottom" x="18" y="126" width="28" height="6" fill="#8A1028" fill-opacity="0.48"/>
+    <rect id="attention-left" x="12" y="98" width="6" height="28" fill="#2A1727" fill-opacity="0.62"/>
+    <rect id="attention-right" x="46" y="98" width="6" height="28" fill="#2A1727" fill-opacity="0.62"/>
+    <path id="attention-topleft" d="M18 92h-1a5 5 0 0 0-5 5v1h6z" fill="#2A1727" fill-opacity="0.62"/>
+    <path id="attention-topright" d="M46 92h1a5 5 0 0 1 5 5v1h-6z" fill="#2A1727" fill-opacity="0.62"/>
+    <path id="attention-bottomleft" d="M12 126v1a5 5 0 0 0 5 5h1v-6z" fill="#8A1028" fill-opacity="0.48"/>
+    <path id="attention-bottomright" d="M46 126v6h1a5 5 0 0 0 5-5v-1z" fill="#8A1028" fill-opacity="0.48"/>
+  </g>
+  <g id="task-minimized">
+    <rect id="minimized-center" x="82" y="98" width="28" height="28" fill="#1B1227" fill-opacity="0.44"/>
+    <rect id="minimized-top" x="82" y="92" width="28" height="6" fill="#1B1227" fill-opacity="0.44"/>
+    <rect id="minimized-bottom" x="82" y="126" width="28" height="6" fill="#6046A6" fill-opacity="0.54"/>
+    <rect id="minimized-left" x="76" y="98" width="6" height="28" fill="#1B1227" fill-opacity="0.44"/>
+    <rect id="minimized-right" x="110" y="98" width="6" height="28" fill="#1B1227" fill-opacity="0.44"/>
+    <path id="minimized-topleft" d="M82 92h-1a5 5 0 0 0-5 5v1h6z" fill="#1B1227" fill-opacity="0.44"/>
+    <path id="minimized-topright" d="M110 92h1a5 5 0 0 1 5 5v1h-6z" fill="#1B1227" fill-opacity="0.44"/>
+    <path id="minimized-bottomleft" d="M76 126v1a5 5 0 0 0 5 5h1v-6z" fill="#6046A6" fill-opacity="0.54"/>
+    <path id="minimized-bottomright" d="M110 126v6h1a5 5 0 0 0 5-5v-1z" fill="#6046A6" fill-opacity="0.54"/>
+  </g>
+  <g id="task-progress">
+    <rect id="progress-center" x="146" y="98" width="28" height="28" fill="#1C1528" fill-opacity="0.56"/>
+    <rect id="progress-top" x="146" y="92" width="28" height="6" fill="#1C1528" fill-opacity="0.56"/>
+    <rect id="progress-bottom" x="146" y="126" width="28" height="6" fill="#C4A45A" fill-opacity="0.46"/>
+    <rect id="progress-left" x="140" y="98" width="6" height="28" fill="#1C1528" fill-opacity="0.56"/>
+    <rect id="progress-right" x="174" y="98" width="6" height="28" fill="#1C1528" fill-opacity="0.56"/>
+    <path id="progress-topleft" d="M146 92h-1a5 5 0 0 0-5 5v1h6z" fill="#1C1528" fill-opacity="0.56"/>
+    <path id="progress-topright" d="M174 92h1a5 5 0 0 1 5 5v1h-6z" fill="#1C1528" fill-opacity="0.56"/>
+    <path id="progress-bottomleft" d="M140 126v1a5 5 0 0 0 5 5h1v-6z" fill="#C4A45A" fill-opacity="0.46"/>
+    <path id="progress-bottomright" d="M174 126v6h1a5 5 0 0 0 5-5v-1z" fill="#C4A45A" fill-opacity="0.46"/>
+  </g>
+  <g id="group-expander-left">
+    <rect x="4" y="72" width="16" height="16" rx="5" fill="#21172E" fill-opacity="0.56"/>
+    <rect x="7" y="85" width="10" height="2" rx="1" fill="#6046A6" fill-opacity="0.56"/>
+    <path d="M14.5 76 9.5 80l5 4" fill="none" stroke="#C4A45A" stroke-opacity="0.62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="group-expander-right">
+    <rect x="28" y="72" width="16" height="16" rx="5" fill="#21172E" fill-opacity="0.56"/>
+    <rect x="31" y="85" width="10" height="2" rx="1" fill="#6046A6" fill-opacity="0.56"/>
+    <path d="m33.5 76 5 4-5 4" fill="none" stroke="#C4A45A" stroke-opacity="0.62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="group-expander-top">
+    <rect x="52" y="72" width="16" height="16" rx="5" fill="#21172E" fill-opacity="0.56"/>
+    <rect x="55" y="85" width="10" height="2" rx="1" fill="#6046A6" fill-opacity="0.56"/>
+    <path d="M56 82.5 60 77l4 5.5" fill="none" stroke="#C4A45A" stroke-opacity="0.62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="group-expander-bottom">
+    <rect x="76" y="72" width="16" height="16" rx="5" fill="#21172E" fill-opacity="0.56"/>
+    <rect x="79" y="85" width="10" height="2" rx="1" fill="#6046A6" fill-opacity="0.56"/>
+    <path d="M80 77.5 84 83l4-5.5" fill="none" stroke="#C4A45A" stroke-opacity="0.62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <use id="north-normal-center" href="#normal-center"/><use id="north-normal-top" href="#normal-top"/><use id="north-normal-bottom" href="#normal-bottom"/><use id="north-normal-left" href="#normal-left"/><use id="north-normal-right" href="#normal-right"/><use id="north-normal-topleft" href="#normal-topleft"/><use id="north-normal-topright" href="#normal-topright"/><use id="north-normal-bottomleft" href="#normal-bottomleft"/><use id="north-normal-bottomright" href="#normal-bottomright"/>
+  <use id="north-hover-center" href="#hover-center"/><use id="north-hover-top" href="#hover-top"/><use id="north-hover-bottom" href="#hover-bottom"/><use id="north-hover-left" href="#hover-left"/><use id="north-hover-right" href="#hover-right"/><use id="north-hover-topleft" href="#hover-topleft"/><use id="north-hover-topright" href="#hover-topright"/><use id="north-hover-bottomleft" href="#hover-bottomleft"/><use id="north-hover-bottomright" href="#hover-bottomright"/>
+  <use id="north-focus-center" href="#focus-center"/><use id="north-focus-top" href="#focus-top"/><use id="north-focus-bottom" href="#focus-bottom"/><use id="north-focus-left" href="#focus-left"/><use id="north-focus-right" href="#focus-right"/><use id="north-focus-topleft" href="#focus-topleft"/><use id="north-focus-topright" href="#focus-topright"/><use id="north-focus-bottomleft" href="#focus-bottomleft"/><use id="north-focus-bottomright" href="#focus-bottomright"/>
+  <use id="north-attention-center" href="#attention-center"/><use id="north-attention-top" href="#attention-top"/><use id="north-attention-bottom" href="#attention-bottom"/><use id="north-attention-left" href="#attention-left"/><use id="north-attention-right" href="#attention-right"/><use id="north-attention-topleft" href="#attention-topleft"/><use id="north-attention-topright" href="#attention-topright"/><use id="north-attention-bottomleft" href="#attention-bottomleft"/><use id="north-attention-bottomright" href="#attention-bottomright"/>
+  <use id="north-minimized-center" href="#minimized-center"/><use id="north-minimized-top" href="#minimized-top"/><use id="north-minimized-bottom" href="#minimized-bottom"/><use id="north-minimized-left" href="#minimized-left"/><use id="north-minimized-right" href="#minimized-right"/><use id="north-minimized-topleft" href="#minimized-topleft"/><use id="north-minimized-topright" href="#minimized-topright"/><use id="north-minimized-bottomleft" href="#minimized-bottomleft"/><use id="north-minimized-bottomright" href="#minimized-bottomright"/>
+  <use id="north-progress-center" href="#progress-center"/><use id="north-progress-top" href="#progress-top"/><use id="north-progress-bottom" href="#progress-bottom"/><use id="north-progress-left" href="#progress-left"/><use id="north-progress-right" href="#progress-right"/><use id="north-progress-topleft" href="#progress-topleft"/><use id="north-progress-topright" href="#progress-topright"/><use id="north-progress-bottomleft" href="#progress-bottomleft"/><use id="north-progress-bottomright" href="#progress-bottomright"/>
+  <use id="west-normal-center" href="#normal-center"/><use id="west-normal-top" href="#normal-top"/><use id="west-normal-bottom" href="#normal-bottom"/><use id="west-normal-left" href="#normal-left"/><use id="west-normal-right" href="#normal-right"/><use id="west-normal-topleft" href="#normal-topleft"/><use id="west-normal-topright" href="#normal-topright"/><use id="west-normal-bottomleft" href="#normal-bottomleft"/><use id="west-normal-bottomright" href="#normal-bottomright"/>
+  <use id="east-normal-center" href="#normal-center"/><use id="east-normal-top" href="#normal-top"/><use id="east-normal-bottom" href="#normal-bottom"/><use id="east-normal-left" href="#normal-left"/><use id="east-normal-right" href="#normal-right"/><use id="east-normal-topleft" href="#normal-topleft"/><use id="east-normal-topright" href="#normal-topright"/><use id="east-normal-bottomleft" href="#normal-bottomleft"/><use id="east-normal-bottomright" href="#normal-bottomright"/>
+</svg>

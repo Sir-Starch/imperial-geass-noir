@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="56" viewBox="0 0 80 56">
+  <rect id="hint-stretch-borders" x="-8" y="-8" width="4" height="4" opacity="0.01"/>
+  <rect id="hint-top-margin" x="36" y="0" width="8" height="8" opacity="0.01"/>
+  <rect id="hint-bottom-margin" x="36" y="48" width="8" height="8" opacity="0.01"/>
+  <rect id="hint-left-margin" x="0" y="24" width="8" height="8" opacity="0.01"/>
+  <rect id="hint-right-margin" x="72" y="24" width="8" height="8" opacity="0.01"/>
+  <rect id="center" x="8" y="8" width="64" height="40" rx="8" fill="#111018" fill-opacity="0.44" stroke="#6046A6" stroke-opacity="0.10"/>
+  <path id="top" d="M16 8h48" stroke="#111018" stroke-opacity="0.42"/>
+  <path id="bottom" d="M18 47.5h44" stroke="#111018" stroke-opacity="0.42"/>
+  <path id="left" d="M8 16v24" stroke="#111018" stroke-opacity="0.42"/>
+  <path id="right" d="M72 16v24" stroke="#111018" stroke-opacity="0.42"/>
+  <path id="topleft" d="M16 8c-4.4 0-8 3.6-8 8" fill="none" stroke="#111018" stroke-opacity="0.42"/>
+  <path id="topright" d="M64 8c4.4 0 8 3.6 8 8" fill="none" stroke="#111018" stroke-opacity="0.42"/>
+  <path id="bottomleft" d="M8 40c0 4.4 3.6 8 8 8" fill="none" stroke="#111018" stroke-opacity="0.42"/>
+  <path id="bottomright" d="M64 48c4.4 0 8-3.6 8-8" fill="none" stroke="#111018" stroke-opacity="0.42"/>
+</svg>

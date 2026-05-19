@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="64" viewBox="0 0 128 64">
+  <rect id="hint-stretch-borders" x="-8" y="-8" width="4" height="4" opacity="0.01"/>
+  <rect id="header-center" x="16" y="10" width="40" height="24" fill="#171020" fill-opacity="0.46"/>
+  <rect id="header-top" x="16" y="6" width="40" height="4" fill="#171020" fill-opacity="0.46"/>
+  <rect id="header-bottom" x="16" y="34" width="40" height="4" fill="#171020" fill-opacity="0.46"/>
+  <rect id="header-left" x="10" y="12" width="6" height="20" fill="#171020" fill-opacity="0.46"/>
+  <rect id="header-right" x="56" y="12" width="6" height="20" fill="#171020" fill-opacity="0.46"/>
+  <path id="header-topleft" d="M16 6h-1a5 5 0 0 0-5 5v1h6z" fill="#171020" fill-opacity="0.46"/>
+  <path id="header-topright" d="M56 6h1a5 5 0 0 1 5 5v1h-6z" fill="#171020" fill-opacity="0.46"/>
+  <path id="header-bottomleft" d="M10 32v1a5 5 0 0 0 5 5h1v-6z" fill="#171020" fill-opacity="0.46"/>
+  <path id="header-bottomright" d="M56 32v6h1a5 5 0 0 0 5-5v-1z" fill="#171020" fill-opacity="0.46"/>
+  <rect id="footer-center" x="80" y="30" width="32" height="16" fill="#111018" fill-opacity="0.50"/>
+  <rect id="footer-top" x="80" y="26" width="32" height="4" fill="#111018" fill-opacity="0.50"/>
+  <rect id="footer-bottom" x="80" y="46" width="32" height="4" fill="#111018" fill-opacity="0.50"/>
+  <rect id="footer-left" x="74" y="30" width="6" height="16" fill="#111018" fill-opacity="0.50"/>
+  <rect id="footer-right" x="112" y="30" width="6" height="16" fill="#111018" fill-opacity="0.50"/>
+  <path id="footer-topleft" d="M80 26h-1a5 5 0 0 0-5 5h6z" fill="#111018" fill-opacity="0.50"/>
+  <path id="footer-topright" d="M112 26h1a5 5 0 0 1 5 5h-6z" fill="#111018" fill-opacity="0.50"/>
+  <path id="footer-bottomleft" d="M74 46a5 5 0 0 0 5 4h1v-4z" fill="#111018" fill-opacity="0.50"/>
+  <path id="footer-bottomright" d="M112 46v4h1a5 5 0 0 0 5-4z" fill="#111018" fill-opacity="0.50"/>
+</svg>

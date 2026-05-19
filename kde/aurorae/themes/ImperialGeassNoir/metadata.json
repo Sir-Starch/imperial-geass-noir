@@ -1,0 +1,15 @@
+{
+  "KPlugin": {
+    "Authors": [
+      {
+        "Name": "Imperial Geass Noir contributors"
+      }
+    ],
+    "Category": "Window Decoration",
+    "Description": "Dark imperial Aurorae window decoration with purple and antique gold accents",
+    "Id": "ImperialGeassNoir",
+    "License": "GPL-3.0-or-later",
+    "Name": "Imperial Geass Noir",
+    "Version": "1.0.0"
+  }
+}

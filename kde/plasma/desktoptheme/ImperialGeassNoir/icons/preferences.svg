@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="198" height="44" viewBox="0 0 198 44">
+  <defs>
+    <style id="current-color-scheme" type="text/css">
+      .ColorScheme-Text { color:#C4A45A; }
+      .ColorScheme-Highlight { color:#6046A6; }
+    </style>
+  </defs>
+  <g id="preferences-system-bluetooth" transform="translate(0 0)">
+    <rect width="22" height="22" fill="none"/>
+    <path class="ColorScheme-Text" fill="currentColor" d="M10 3h1.1l4.1 4-3.8 4 3.8 4-4.1 4H10v-6.1l-3.7 3.3-1.1-1.2L9.7 11 5.2 7l1.1-1.2L10 9.1V3Zm1.6 3.1v3l1.5-1.5-1.5-1.5Zm0 6.8v3l1.5-1.5-1.5-1.5Z"/>
+  </g>
+  <g id="preferences-system-bluetooth-activated" transform="translate(22 0)">
+    <rect width="22" height="22" fill="none"/>
+    <path class="ColorScheme-Text" fill="currentColor" d="M10 3h1.1l4.1 4-3.8 4 3.8 4-4.1 4H10v-6.1l-3.7 3.3-1.1-1.2L9.7 11 5.2 7l1.1-1.2L10 9.1V3Zm1.6 3.1v3l1.5-1.5-1.5-1.5Zm0 6.8v3l1.5-1.5-1.5-1.5Z"/>
+    <circle class="ColorScheme-Highlight" cx="17" cy="5" r="2" fill="currentColor"/>
+  </g>
+  <g id="preferences-system-bluetooth-inactive" transform="translate(44 0)" opacity=".58">
+    <rect width="22" height="22" fill="none"/>
+    <path class="ColorScheme-Text" fill="currentColor" d="M10 3h1.1l4.1 4-3.8 4 3.8 4-4.1 4H10v-6.1l-3.7 3.3-1.1-1.2L9.7 11 5.2 7l1.1-1.2L10 9.1V3Zm1.6 3.1v3l1.5-1.5-1.5-1.5Zm0 6.8v3l1.5-1.5-1.5-1.5Z"/>
+  </g>
+  <g id="22-22-preferences-system-bluetooth" transform="translate(66 0)">
+    <rect width="22" height="22" fill="none"/>
+    <path class="ColorScheme-Text" fill="currentColor" d="M10 3h1.1l4.1 4-3.8 4 3.8 4-4.1 4H10v-6.1l-3.7 3.3-1.1-1.2L9.7 11 5.2 7l1.1-1.2L10 9.1V3Zm1.6 3.1v3l1.5-1.5-1.5-1.5Zm0 6.8v3l1.5-1.5-1.5-1.5Z"/>
+  </g>
+  <g id="22-22-preferences-system-bluetooth-activated" transform="translate(88 0)">
+    <rect width="22" height="22" fill="none"/>
+    <path class="ColorScheme-Text" fill="currentColor" d="M10 3h1.1l4.1 4-3.8 4 3.8 4-4.1 4H10v-6.1l-3.7 3.3-1.1-1.2L9.7 11 5.2 7l1.1-1.2L10 9.1V3Zm1.6 3.1v3l1.5-1.5-1.5-1.5Zm0 6.8v3l1.5-1.5-1.5-1.5Z"/>
+    <circle class="ColorScheme-Highlight" cx="17" cy="5" r="2" fill="currentColor"/>
+  </g>
+  <g id="22-22-preferences-system-bluetooth-inactive" transform="translate(110 0)" opacity=".58">
+    <rect width="22" height="22" fill="none"/>
+    <path class="ColorScheme-Text" fill="currentColor" d="M10 3h1.1l4.1 4-3.8 4 3.8 4-4.1 4H10v-6.1l-3.7 3.3-1.1-1.2L9.7 11 5.2 7l1.1-1.2L10 9.1V3Zm1.6 3.1v3l1.5-1.5-1.5-1.5Zm0 6.8v3l1.5-1.5-1.5-1.5Z"/>
+  </g>
+  <g id="preferences-system-bluetooth-symbolic" transform="translate(132 0)">
+    <rect width="22" height="22" fill="none"/>
+    <path class="ColorScheme-Text" fill="currentColor" d="M10 3h1.1l4.1 4-3.8 4 3.8 4-4.1 4H10v-6.1l-3.7 3.3-1.1-1.2L9.7 11 5.2 7l1.1-1.2L10 9.1V3Zm1.6 3.1v3l1.5-1.5-1.5-1.5Zm0 6.8v3l1.5-1.5-1.5-1.5Z"/>
+  </g>
+  <g id="preferences-system-bluetooth-activated-symbolic" transform="translate(154 0)">
+    <rect width="22" height="22" fill="none"/>
+    <path class="ColorScheme-Text" fill="currentColor" d="M10 3h1.1l4.1 4-3.8 4 3.8 4-4.1 4H10v-6.1l-3.7 3.3-1.1-1.2L9.7 11 5.2 7l1.1-1.2L10 9.1V3Zm1.6 3.1v3l1.5-1.5-1.5-1.5Zm0 6.8v3l1.5-1.5-1.5-1.5Z"/>
+    <circle class="ColorScheme-Highlight" cx="17" cy="5" r="2" fill="currentColor"/>
+  </g>
+  <g id="preferences-system-bluetooth-inactive-symbolic" transform="translate(176 0)" opacity=".58">
+    <rect width="22" height="22" fill="none"/>
+    <path class="ColorScheme-Text" fill="currentColor" d="M10 3h1.1l4.1 4-3.8 4 3.8 4-4.1 4H10v-6.1l-3.7 3.3-1.1-1.2L9.7 11 5.2 7l1.1-1.2L10 9.1V3Zm1.6 3.1v3l1.5-1.5-1.5-1.5Zm0 6.8v3l1.5-1.5-1.5-1.5Z"/>
+  </g>
+</svg>
