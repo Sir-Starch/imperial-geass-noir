@@ -3,7 +3,7 @@ name=Imperial Geass Noir
 widgetStyle=Breeze
 
 [ContrastEffect]
-enabled=true
+enabled=false
 contrast=0.18
 intensity=0.45
 saturation=1.25

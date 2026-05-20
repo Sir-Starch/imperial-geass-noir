@@ -44,7 +44,15 @@ try {
 } catch (e) {}
 
 try {
-    topPanel.opacity = "adaptive"
+    topPanel.opacity = "translucent"
+} catch (e) {}
+
+try {
+    topPanel.opacityMode = "translucent"
+} catch (e) {}
+
+try {
+    topPanel.opacityMode = 2
 } catch (e) {}
 
 var kickoff = addWidgetSafe(topPanel, "org.kde.plasma.kickoff")

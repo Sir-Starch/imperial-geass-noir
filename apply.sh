@@ -149,21 +149,48 @@ invalidate_plasma_theme_cache() {
   local cache_file
   local stamp
   local moved=false
+  local had_nullglob=false
 
   stamp="$(date +%Y%m%d-%H%M%S)"
+  if shopt -q nullglob; then
+    had_nullglob=true
+  fi
+  shopt -s nullglob
 
   for cache_file in \
     "${cache_home}/plasma_theme_${desktop_theme}.kcache" \
-    "${cache_home}/plasma_theme_${desktop_theme}.kcache2"; do
+    "${cache_home}/plasma_theme_${desktop_theme}.kcache2" \
+    "${cache_home}/plasma_theme_${desktop_theme}"*.kcache \
+    "${cache_home}/ksvg-elements" \
+    "${cache_home}/ksvg-elements-"* \
+    "${cache_home}/plasma-svgelements" \
+    "${cache_home}/plasma-svgelements-"*; do
     if [[ -e "${cache_file}" ]]; then
       mv -- "${cache_file}" "${cache_file}.backup-${stamp}"
       moved=true
     fi
   done
+  if [[ "${had_nullglob}" == true ]]; then
+    shopt -s nullglob
+  else
+    shopt -u nullglob
+  fi
 
   if [[ "${moved}" == true ]]; then
-    success+=("Plasma theme SVG cache invalidated")
+    success+=("Plasma/KSvg theme cache invalidated")
   fi
+}
+
+apply_plasma_desktop_theme() {
+  command -v plasma-apply-desktoptheme >/dev/null 2>&1 || return 127
+
+  # Plasma can answer "already set" without reloading KSvg caches. Switch away
+  # briefly so updated panel/widget SVGs are parsed again in the live session.
+  plasma-apply-desktoptheme org.kde.breeze >/dev/null 2>&1 \
+    || plasma-apply-desktoptheme default >/dev/null 2>&1 \
+    || true
+
+  plasma-apply-desktoptheme "${desktop_theme}" >/dev/null 2>&1
 }
 
 sanitize_plasma_system_tray() {
@@ -281,7 +308,8 @@ fi
 if [[ "${can_use_live_kde}" != true ]]; then
   manual+=("Plasma desktop theme: no graphical KDE session detected")
 elif command -v plasma-apply-desktoptheme >/dev/null 2>&1; then
-  run_optional "Plasma desktop theme" plasma-apply-desktoptheme "${desktop_theme}"
+  invalidate_plasma_theme_cache
+  run_optional "Plasma desktop theme" apply_plasma_desktop_theme
 else
   manual+=("Plasma desktop theme: plasma-apply-desktoptheme not found")
 fi
@@ -324,7 +352,7 @@ if command -v kwriteconfig6 >/dev/null 2>&1; then
   kwriteconfig6 --file kdeglobals --group KDE --key widgetStyle "Breeze"
   kwriteconfig6 --file kdeglobals --group KDE --key contrast 1
   kwriteconfig6 --file kdeglobals --group KDE --key frameContrast 0.2
-  kwriteconfig6 --file plasmarc --group ContrastEffect --key enabled true
+  kwriteconfig6 --file plasmarc --group ContrastEffect --key enabled false
   kwriteconfig6 --file plasmarc --group ContrastEffect --key contrast 0.18
   kwriteconfig6 --file plasmarc --group ContrastEffect --key intensity 0.45
   kwriteconfig6 --file plasmarc --group ContrastEffect --key saturation 1.25
@@ -341,6 +369,8 @@ if command -v kwriteconfig6 >/dev/null 2>&1; then
   kwriteconfig6 --file kwinrc --group kwin6_effect_tv_glitch --key Strength 1.2
   kwriteconfig6 --file kwinrc --group kwin6_effect_tv_glitch --key Speed 1.0
   kwriteconfig6 --file kwinrc --group Effect-kwin6_effect_tv_glitch --key Color "13,11,18"
+  kwriteconfig6 --file kwinrc --group Plugins --key blurEnabled true
+  kwriteconfig6 --file kwinrc --group Plugins --key contrastEnabled false
   ensure_kwin_decoration_file
   kwriteconfig6 --file kdeglobals --group General --key ColorSchemeHash --delete >/dev/null 2>&1 || true
   success+=("KDE apps, Dolphin, Konsole, fonts, icons, and accent config")
@@ -374,7 +404,7 @@ elif command -v kwriteconfig5 >/dev/null 2>&1; then
   kwriteconfig5 --file kdeglobals --group KDE --key widgetStyle "Breeze"
   kwriteconfig5 --file kdeglobals --group KDE --key contrast 1
   kwriteconfig5 --file kdeglobals --group KDE --key frameContrast 0.2
-  kwriteconfig5 --file plasmarc --group ContrastEffect --key enabled true
+  kwriteconfig5 --file plasmarc --group ContrastEffect --key enabled false
   kwriteconfig5 --file plasmarc --group ContrastEffect --key contrast 0.18
   kwriteconfig5 --file plasmarc --group ContrastEffect --key intensity 0.45
   kwriteconfig5 --file plasmarc --group ContrastEffect --key saturation 1.25
@@ -389,6 +419,8 @@ elif command -v kwriteconfig5 >/dev/null 2>&1; then
   kwriteconfig5 --file kwinrc --group kwin6_effect_tv_glitch --key Strength 1.2
   kwriteconfig5 --file kwinrc --group kwin6_effect_tv_glitch --key Speed 1.0
   kwriteconfig5 --file kwinrc --group Effect-kwin6_effect_tv_glitch --key Color "13,11,18"
+  kwriteconfig5 --file kwinrc --group Plugins --key blurEnabled true
+  kwriteconfig5 --file kwinrc --group Plugins --key contrastEnabled false
   ensure_kwin_decoration_file
   kwriteconfig5 --file kdeglobals --group General --key ColorSchemeHash --delete >/dev/null 2>&1 || true
   success+=("KDE apps, Konsole, fonts, icons, and accent config")
@@ -436,8 +468,6 @@ if aurorae_available; then
 else
   manual+=("Aurorae window decoration: install aurorae/kwin tools and re-run ./install.sh")
 fi
-
-invalidate_plasma_theme_cache
 
 if command -v kbuildsycoca6 >/dev/null 2>&1; then
   if kbuildsycoca6 --noincremental >/dev/null 2>&1; then
