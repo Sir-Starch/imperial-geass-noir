@@ -10,11 +10,12 @@ imperial, and more focused on a cohesive daily environment than on being
 universally comfortable for every Plasma user. You can use it as-is, fork it, or
 strip it for parts, but some defaults are intentionally opinionated.
 
-Version: `1.0.0`
+Version: `1.0.1`
 
 ## Screenshots
 
 ![Desktop](assets/screenshot-desktop.png)
+*(Note: The fastfetch configuration shown in this screenshot is not included in the theme)*
 
 ![VS Code](assets/screenshot-vscode.png)
 
@@ -164,16 +165,16 @@ The installer copies user-local files into:
 For VS Code-like editors, the installer builds:
 
 ```text
-dist/imperial-geass-noir-1.0.0.vsix
+dist/imperial-geass-noir-1.0.1.vsix
 ```
 
 Then it installs the extension through any available CLI:
 
 ```sh
-code --install-extension dist/imperial-geass-noir-1.0.0.vsix --force
-code-oss --install-extension dist/imperial-geass-noir-1.0.0.vsix --force
-codium --install-extension dist/imperial-geass-noir-1.0.0.vsix --force
-vscodium --install-extension dist/imperial-geass-noir-1.0.0.vsix --force
+code --install-extension dist/imperial-geass-noir-1.0.1.vsix --force
+code-oss --install-extension dist/imperial-geass-noir-1.0.1.vsix --force
+codium --install-extension dist/imperial-geass-noir-1.0.1.vsix --force
+vscodium --install-extension dist/imperial-geass-noir-1.0.1.vsix --force
 ```
 
 If no compatible CLI exists, it falls back to copying extension files into the
@@ -295,7 +296,7 @@ node scripts/build-vscode-vsix.mjs
 Manual install:
 
 ```sh
-code-oss --install-extension dist/imperial-geass-noir-1.0.0.vsix --force
+code-oss --install-extension dist/imperial-geass-noir-1.0.1.vsix --force
 ```
 
 The apply script sets this when a matching settings directory exists:

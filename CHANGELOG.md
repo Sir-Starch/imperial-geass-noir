@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- Fix Plasma 6 panel translucency.
+- Add caption to desktop screenshot in README clarifying fastfetch configuration.
+
 ## 1.0.0
 
 Initial release of Imperial Geass Noir.

@@ -429,7 +429,7 @@ else
 fi
 
 vscode_extension_id="imperialgeassnoir.imperial-geass-noir"
-vscode_vsix="${repo_dir}/dist/imperial-geass-noir-1.0.0.vsix"
+vscode_vsix="${repo_dir}/dist/imperial-geass-noir-1.0.1.vsix"
 if command -v node >/dev/null 2>&1 && command -v zip >/dev/null 2>&1 && [[ -f "${repo_dir}/scripts/build-vscode-vsix.mjs" ]]; then
   node "${repo_dir}/scripts/build-vscode-vsix.mjs" >/dev/null 2>&1 || true
 fi
