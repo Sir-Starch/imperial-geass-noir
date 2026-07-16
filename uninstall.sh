@@ -19,8 +19,7 @@ zsh_marker_begin="# >>> Imperial Geass Noir >>>"
 zsh_marker_end="# <<< Imperial Geass Noir <<<"
 bash_marker_begin="# >>> Imperial Geass Noir Bash >>>"
 bash_marker_end="# <<< Imperial Geass Noir Bash <<<"
-vscode_extension_name="imperial-geass-noir-theme"
-vscode_extension_id="imperialgeassnoir.imperial-geass-noir"
+
 
 removed=()
 skipped=()
@@ -50,19 +49,7 @@ remove_path "${data_home}/konsole/ImperialGeassNoir.profile"
 remove_path "${config_home}/alacritty/themes/imperial-geass-noir.toml"
 remove_path "${config_home}/ghostty/themes/imperial-geass-noir"
 remove_path "${config_home}/wezterm/imperial-geass-noir.lua"
-remove_path "${HOME}/.vscode/extensions/${vscode_extension_name}"
-remove_path "${HOME}/.vscode-oss/extensions/${vscode_extension_name}"
-remove_path "${HOME}/.vscodium/extensions/${vscode_extension_name}"
-remove_path "${HOME}/.var/app/com.visualstudio.code/data/vscode/extensions/${vscode_extension_name}"
-remove_path "${HOME}/.var/app/com.vscodium.codium/data/vscode/extensions/${vscode_extension_name}"
-remove_path "${HOME}/.var/app/com.visualstudio.code-oss/data/vscode/extensions/${vscode_extension_name}"
-for vscode_cli in code code-oss codium vscodium; do
-  if command -v "${vscode_cli}" >/dev/null 2>&1; then
-    if "${vscode_cli}" --uninstall-extension "${vscode_extension_id}" >/dev/null 2>&1; then
-      removed+=("${vscode_extension_id} from ${vscode_cli}")
-    fi
-  fi
-done
+
 remove_path "${data_home}/wallpapers/${theme_slug}"
 
 for wallpaper_name in \
