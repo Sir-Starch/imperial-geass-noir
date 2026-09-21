@@ -1,0 +1,190 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "kitty",
+    "source": "~/.config/fastfetch/fastfetch.webp",
+    "width": 32,
+    "padding": {
+      "top": 5
+    }
+  },
+  "display": {
+    "separator": " ",
+    "color": {
+      "output": "38;2;241;245;249"
+    },
+    "constants": [
+      "\u001b[38;2;168;85;247m",  // {$1}  = SYS_BORDER  (Royal Geass Violet)
+      "\u001b[38;2;216;180;254m", // {$2}  = SYS_KEY     (Lavender Purple)
+      "\u001b[38;2;88;66;120m",   // {$3}  = SYS_DOT     (Muted Plum)
+      "\u001b[38;2;245;158;11m",  // {$4}  = DE_BORDER   (Imperial Gold)
+      "\u001b[38;2;252;211;77m",  // {$5}  = DE_KEY      (Warm Amber Gold)
+      "\u001b[38;2;105;80;35m",   // {$6}  = DE_DOT      (Muted Bronze)
+      "\u001b[38;2;132;204;22m",  // {$7}  = HW_BORDER   (C.C. Vivid Lime)
+      "\u001b[38;2;190;242;100m", // {$8}  = HW_KEY      (Bright Chartreuse)
+      "\u001b[38;2;58;80;30m",    // {$9}  = HW_DOT      (Muted Olive)
+      "\u001b[38;2;6;182;212m",   // {$10} = ST_BORDER   (Cyber Ice Cyan)
+      "\u001b[38;2;103;232;249m", // {$11} = ST_KEY      (Bright Cyan)
+      "\u001b[38;2;30;75;88m",    // {$12} = ST_DOT      (Muted Cyan)
+      "\u001b[0m"                 // {$13} = RESET
+    ]
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "\u001b[38;2;192;132;252m{user-name}\u001b[38;2;148;163;184m@\u001b[38;2;163;230;53m{host-name}\u001b[0m"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;76;58;110m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m"
+    },
+
+    // ╭─ SYSTEM ──────────────────────────────────────╮
+    {
+      "type": "custom",
+      "format": "{$1}╭─[ \uF17C SYSTEM ]──────────────────────────────────────────────────────────────────{$13}"
+    },
+    {
+      "type": "os",
+      "key": "{$1}│  {$2}OS{$3} ··········{$13}"
+    },
+    {
+      "type": "kernel",
+      "key": "{$1}│  {$2}KERNEL{$3} ······{$13}"
+    },
+    {
+      "type": "uptime",
+      "key": "{$1}│  {$2}UPTIME{$3} ······{$13}"
+    },
+    {
+      "type": "packages",
+      "key": "{$1}│  {$2}PKGS{$3} ········{$13}"
+    },
+    {
+      "type": "shell",
+      "key": "{$1}│  {$2}SHELL{$3} ·······{$13}"
+    },
+    {
+      "type": "custom",
+      "format": "{$1}╰───────────────────────────────────────────────────────────────────────────────{$13}"
+    },
+
+    "break",
+
+    // ╭─ DESKTOP ─────────────────────────────────────╮
+    {
+      "type": "custom",
+      "format": "{$4}╭─[ \uF108 DESKTOP ]─────────────────────────────────────────────────────────────────{$13}"
+    },
+    {
+      "type": "de",
+      "key": "{$4}│  {$5}DE{$6} ··········{$13}"
+    },
+    {
+      "type": "wm",
+      "key": "{$4}│  {$5}WM{$6} ··········{$13}"
+    },
+    {
+      "type": "terminal",
+      "key": "{$4}│  {$5}TERM{$6} ········{$13}"
+    },
+    {
+      "type": "theme",
+      "key": "{$4}│  {$5}THEME{$6} ·······{$13}",
+      "format": "{theme1}"
+    },
+    {
+      "type": "icons",
+      "key": "{$4}│  {$5}ICONS{$6} ·······{$13}",
+      "format": "{icons1}"
+    },
+    {
+      "type": "font",
+      "key": "{$4}│  {$5}FONT{$6} ········{$13}",
+      "format": "{font1}"
+    },
+    {
+      "type": "custom",
+      "format": "{$4}╰───────────────────────────────────────────────────────────────────────────────{$13}"
+    },
+
+    "break",
+
+    // ╭─ HARDWARE ────────────────────────────────────╮
+    {
+      "type": "custom",
+      "format": "{$7}╭─[ \uF2DB HARDWARE ]────────────────────────────────────────────────────────────────{$13}"
+    },
+    {
+      "type": "board",
+      "key": "{$7}│  {$8}MOBO{$9} ········{$13}",
+      "format": "{?vendor}{vendor} {?}{name}"
+    },
+    {
+      "type": "cpu",
+      "key": "{$7}│  {$8}CPU{$9} ·········{$13}",
+      "format": "{name} ({cores-physical}C/{cores-logical}T) @ {freq-max}"
+    },
+    {
+      "type": "gpu",
+      "key": "{$7}│  {$8}dGPU{$9} ········{$13}",
+      "hideType": "Integrated",
+      "format": "{?vendor}{vendor} {?}{name} [{type}]"
+    },
+    {
+      "type": "gpu",
+      "key": "{$7}│  {$8}iGPU{$9} ········{$13}",
+      "hideType": "Discrete",
+      "format": "{?vendor}{vendor} {?}{name} [{type}]"
+    },
+    {
+      "type": "memory",
+      "key": "{$7}│  {$8}RAM{$9} ·········{$13}",
+      "format": "{used} / {total} ({percentage})"
+    },
+    {
+      "type": "swap",
+      "key": "{$7}│  {$8}SWAP{$9} ········{$13}",
+      "format": "{used} / {total} ({percentage})"
+    },
+    {
+      "type": "custom",
+      "format": "{$7}╰───────────────────────────────────────────────────────────────────────────────{$13}"
+    },
+
+    "break",
+
+    // ╭─ STORAGE & MEDIA ─────────────────────────────╮
+    {
+      "type": "custom",
+      "format": "{$10}╭─[ \uF0A0 STORAGE & MEDIA ]─────────────────────────────────────────────────────────{$13}"
+    },
+    {
+      "type": "disk",
+      "key": "{$10}│  {$11}DISK{$12} ········{$13}",
+      "format": "{size-used} / {size-total} ({size-percentage}) [{mountpoint}]"
+    },
+    {
+      "type": "display",
+      "key": "{$10}│  {$11}DISPLAYS{$12} ····{$13}",
+      "compactType": "original-with-refresh-rate",
+      "order": "asc"
+    },
+    {
+      "type": "sound",
+      "key": "{$10}│  {$11}AUDIO{$12} ·······{$13}",
+      "format": "{name}"
+    },
+    {
+      "type": "custom",
+      "format": "{$10}╰───────────────────────────────────────────────────────────────────────────────{$13}"
+    },
+
+    "break",
+
+    {
+      "type": "custom",
+      "format": " \u001b[38;2;168;85;247m● \u001b[38;2;216;180;254m● \u001b[38;2;245;158;11m● \u001b[38;2;252;211;77m● \u001b[38;2;132;204;22m● \u001b[38;2;190;242;100m● \u001b[38;2;6;182;212m● \u001b[38;2;103;232;249m●\u001b[0m"
+    }
+  ]
+}

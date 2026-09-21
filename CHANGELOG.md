@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2
+
+- Add universal Fastfetch theme configuration and bundled Geass artwork (`fastfetch.webp`).
+- Add `scripts/install-fastfetch.sh` and `scripts/uninstall-fastfetch.sh` for optional Fastfetch integration.
+- Replace system-specific hardcoded hardware fields with dynamic Fastfetch format variables.
+
 ## 1.0.1
 
 - Fix Plasma 6 panel translucency.
