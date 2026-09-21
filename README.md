@@ -15,7 +15,9 @@ Version: `1.0.1`
 ## Screenshots
 
 ![Desktop](assets/screenshot-desktop.png)
-*(Note: The fastfetch configuration shown in this screenshot is not included in the theme)*
+
+![Fastfetch](assets/screenshot-fastfetch.png)
+*(Screenshot shows my personal setup with hardcoded hardware info; the bundled config is universal with the exact same look — see [Fastfetch](#fastfetch))*
 
 ![VS Code](assets/screenshot-vscode.png)
 
@@ -50,6 +52,7 @@ Version: `1.0.1`
 - Kitty, Konsole, Alacritty, Ghostty, and WezTerm color profiles
 - zsh, bash, fish, and Starship prompt profiles
 - VS Code / Code OSS / VSCodium color theme extension
+- Fastfetch optional HUD profile and custom image
 
 ## Target Desktop
 
@@ -340,6 +343,31 @@ The zsh profile removes common competing prompt hooks from Powerlevel,
 Starship, Spaceship, and Pure-style prompts after it is sourced so the prompt
 remains consistent.
 
+## Fastfetch
+
+An optional Fastfetch HUD configuration matching the Imperial Geass Noir palette:
+
+- Royal Geass Violet for System metrics
+- Imperial Gold for Desktop info
+- C.C. Lime for Hardware
+- Cyber Ice Cyan for Storage & Media
+- Bundled custom Geass artwork (`fastfetch.webp`) with Kitty graphics protocol support
+
+Install:
+
+```sh
+chmod +x scripts/install-fastfetch.sh
+./scripts/install-fastfetch.sh
+```
+
+The installer backs up any existing `~/.config/fastfetch/config.jsonc` before installing.
+
+Uninstall:
+
+```sh
+./scripts/uninstall-fastfetch.sh
+```
+
 ## Uninstall
 
 Run:
@@ -441,6 +469,10 @@ node scripts/build-vscode-vsix.mjs
 - `fish/conf.d/imperial-geass-noir.fish`
 - `starship/imperial-geass-noir.toml`
 - `vscode/imperial-geass-noir/`
+- `fastfetch/config.jsonc`
+- `fastfetch/fastfetch.webp`
+- `scripts/install-fastfetch.sh`
+- `scripts/uninstall-fastfetch.sh`
 - `scripts/recolor-icons.mjs`
 - `scripts/build-vscode-vsix.mjs`
 - `wallpapers/`
